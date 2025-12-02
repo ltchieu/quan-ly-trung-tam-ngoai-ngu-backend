@@ -1,0 +1,5 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20251110-REMOVED-seedata
+      author: admin
+      comment: "Seed data removed. Only structure changes remain in other changeSets."

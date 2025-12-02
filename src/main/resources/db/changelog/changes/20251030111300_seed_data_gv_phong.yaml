@@ -1,0 +1,5 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20251030-REMOVED-seed-gv-phong
+      author: admin
+      comment: "Seed data removed - files only contain structural changes in other migrations."

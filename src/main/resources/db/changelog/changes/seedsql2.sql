@@ -1,0 +1,2 @@
+-- SEED DATA REMOVED
+-- This SQL file previously contained seed insert statements. It is retained as an empty placeholder to preserve file references but contains no operations.

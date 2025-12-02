@@ -1,0 +1,5 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20251017-01-REMOVED-SEED
+      author: admin
+      comment: "This seed changeSet has been removed; seeds are not applied in migrations anymore."

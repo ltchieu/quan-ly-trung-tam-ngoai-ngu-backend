@@ -1,0 +1,30 @@
+databaseChangeLog:
+  - changeSet:
+      id: add-start-time-to-lop
+      author: nguyen
+      changes:
+        - addColumn:
+            tableName: lop
+            columns:
+              - column:
+                  name: giobatdau
+                  type: TIME
+
+  # 1. ChangeSet: Xóa cột sodienthoai và email khỏi bảng giangvien
+  - changeSet:
+      id: remove-phone-and-email-from-giangvien
+      author: nguyen
+      comment: Remove sodienthoai and email columns from giangvien table as they might be stored in the User table.
+      changes:
+        - dropColumn:
+            tableName: giangvien
+            columnName: sodienthoai
+        - dropColumn:
+            tableName: giangvien
+            columnName: email
+
+  # 2. ChangeSet: Thêm seed data cho bảng phong (REMOVED)
+  - changeSet:
+      id: 20251105-REMOVED-seed-phong
+      author: nguyen
+      comment: "Seed data removed - only structural changes remain applied in other migrations."
