@@ -65,7 +65,7 @@ public class WebSecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(Arrays.asList("http://localhost:3000", "http://localhost:3001", "https://quan-ly-trung-tam-ngoai-jxtyelos2-ltchieus-projects.vercel.app/")); // Thêm các domain khác nếu cần
+        configuration.setAllowedOrigins(Arrays.asList("http://localhost:3000", "http://localhost:3001", "https://quan-ly-trung-tam-ngoai-ngu.vercel.app")); // Thêm các domain khác nếu cần
 
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"));
 
